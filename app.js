@@ -215,3 +215,25 @@ Array.from(document.getElementsByClassName("pagi_img")).forEach(function (
     document.getElementsByClassName("pagi_img")[index / 310].style.opacity = 1;
   });
 });
+
+
+// Menyesuaikan jumlah scroll berdasarkan lebar layar
+const updateScrollSettings = () => {
+  const screenWidth = window.innerWidth;
+  if (screenWidth <= 768) {
+    len = Array.from(document.getElementsByClassName("main_imgs")).length * 210; // Kurangi jarak scroll
+    document.querySelectorAll(".main_imgs").forEach((el) => {
+      el.style.width = "90%"; // Sesuaikan lebar gambar di layar kecil
+    });
+  } else {
+    len = Array.from(document.getElementsByClassName("main_imgs")).length * 310; // Gunakan jarak scroll default
+    document.querySelectorAll(".main_imgs").forEach((el) => {
+      el.style.width = "44%"; // Kembali ke lebar asli
+    });
+  }
+};
+
+// Panggil saat halaman dimuat dan ketika ukuran layar berubah
+updateScrollSettings();
+window.addEventListener("resize", updateScrollSettings);
+
