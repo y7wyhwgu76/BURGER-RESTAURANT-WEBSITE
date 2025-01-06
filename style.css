@@ -827,3 +827,40 @@ footer p:nth-last-child(1) a {
   text-decoration: none;
   font-weight: 600;
 }
+
+/* Pastikan viewport mobile */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.images {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .main_imgs {
+    width: 90%; /* Gambar lebih lebar */
+    margin: 10px auto; /* Tengahkan elemen */
+  }
+
+  .price {
+    font-size: 14px; /* Sesuaikan ukuran font */
+  }
+
+  .tittle {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .pagi_img {
+    transform: scale(0.9); /* Ukuran thumbnail lebih kecil */
+  }
+}
+
