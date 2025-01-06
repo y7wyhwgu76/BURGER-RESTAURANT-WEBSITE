@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "bobblebod";
-  src: url(Bobblebod.ttf);
+  src: (Bobblebod.ttf);
 }
 
 html {
