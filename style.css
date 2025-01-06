@@ -364,7 +364,7 @@ section .img_bx .burger_badge .badge_card h5 {
   padding: 9px 15px;
   color: #fff;
   font-size: 13px;
-  font-family: "booblebod";
+  font-family: "bobblebod";
   border: none;
   outline: none;
   cursor: pointer;
@@ -724,7 +724,7 @@ footer nav ul:nth-child(2) li a {
   all: unset;
   color: #00a950;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 footer nav ul:nth-child(2) li:nth-child(2) {
@@ -732,7 +732,7 @@ footer nav ul:nth-child(2) li:nth-child(2) {
   border-radius: 10px;
   padding: 9px 15px;
   color: #000;
-  font-size: 16px;
+  font-size: 22px;
   font-family: "bobblebod";
   border: none;
   outline: none;
